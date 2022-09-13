@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startAppFragment">
+
+    <fragment
+        android:id="@+id/startAppFragment"
+        android:name="com.example.quraankareem.StartAppFragment"
+        android:label="fragment_start_app"
+        tools:layout="@layout/fragment_start_app" >
+        <action
+            android:id="@+id/action_startAppFragment_to_blankFragment"
+            app:destination="@id/blankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/azkarFragment"
+        android:name="com.example.quraankareem.AzkarFragment"
+        android:label="fragment_azkar"
+        tools:layout="@layout/fragment_azkar" />
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.quraankareem.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_azkarFragment"
+            app:destination="@id/azkarFragment" />
+        <action
+            android:id="@+id/action_blankFragment_to_tasbeehFragment"
+            app:destination="@id/tasbeehFragment" />
+        <action
+            android:id="@+id/action_blankFragment_to_quraanFragment"
+            app:destination="@id/quraanFragment" />
+        <action
+            android:id="@+id/action_blankFragment_to_doaaFragment"
+            app:destination="@id/doaaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tasbeehFragment"
+        android:name="com.example.quraankareem.TasbeehFragment"
+        android:label="fragment_tasbeeh"
+        tools:layout="@layout/fragment_tasbeeh" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/quraanFragment"
+        android:name="com.example.quraankareem.QuraanFragment"
+        android:label="fragment_quraan"
+        tools:layout="@layout/fragment_quraan" />
+    <fragment
+        android:id="@+id/doaaFragment"
+        android:name="com.example.quraankareem.DoaaFragment"
+        android:label="fragment_doaa"
+        tools:layout="@layout/fragment_doaa" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.quraankareem.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>

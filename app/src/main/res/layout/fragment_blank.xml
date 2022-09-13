@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/second"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp" />
+
+    <TextView
+        android:id="@+id/tvAzkar"
+        android:layout_width="241dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="أذكار"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQuraan" />
+
+    <TextView
+        android:id="@+id/tvQuraan"
+        android:layout_width="241dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="116dp"
+        android:gravity="center"
+        android:text="قرآن"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTasbeeh"
+        android:layout_width="241dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="سبحة"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDoaa" />
+
+    <TextView
+        android:id="@+id/tvDoaa"
+        android:layout_width="241dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="أدعية"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAzkar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
